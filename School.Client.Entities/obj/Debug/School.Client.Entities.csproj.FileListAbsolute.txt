@@ -1,0 +1,4 @@
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\School.Client.Entities\bin\Debug\School.Client.Entities.dll
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\School.Client.Entities\bin\Debug\School.Client.Entities.pdb
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\School.Client.Entities\obj\Debug\School.Client.Entities.dll
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\School.Client.Entities\obj\Debug\School.Client.Entities.pdb

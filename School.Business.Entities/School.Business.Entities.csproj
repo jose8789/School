@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B25E470-F615-4964-BFBA-CE270A7ADAD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>School.Business.Entities</RootNamespace>
+    <AssemblyName>School.Business.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="AlunoBase.cs" />
+    <Compile Include="AlunoDeficiencia.cs" />
+    <Compile Include="AlunoDisciplinaEmAtraso.cs" />
+    <Compile Include="AlunoHistoria.cs" />
+    <Compile Include="AlunoProfissao.cs" />
+    <Compile Include="AlunoTurma.cs" />
+    <Compile Include="AreaDeFormacao.cs" />
+    <Compile Include="AusenciaDoAluno.cs" />
+    <Compile Include="AusenciaDoProfessor.cs" />
+    <Compile Include="Avaliacao.cs" />
+    <Compile Include="Bairro.cs" />
+    <Compile Include="Bilhete.cs" />
+    <Compile Include="BusinessEntity.cs" />
+    <Compile Include="BusinessEntityAluno.cs" />
+    <Compile Include="BusinessEntityFuncionario.cs" />
+    <Compile Include="BusinessEntityMorada.cs" />
+    <Compile Include="Comuna.cs" />
+    <Compile Include="Curso.cs" />
+    <Compile Include="CursoDisciplina.cs" />
+    <Compile Include="CursoDisciplinaOpcional.cs" />
+    <Compile Include="CursoInfo.cs" />
+    <Compile Include="Deficiencia.cs" />
+    <Compile Include="Disciplina.cs" />
+    <Compile Include="DisciplinaInfo.cs" />
+    <Compile Include="DTOs\AlunoDeficienciaIdentity.cs" />
+    <Compile Include="DTOs\AlunoDisciplinaIdentity.cs" />
+    <Compile Include="DTOs\AlunoProfissaoIdentity.cs" />
+    <Compile Include="DTOs\AlunoTurmaIdentity.cs" />
+    <Compile Include="DTOs\CursoDisciplinaIdentity.cs" />
+    <Compile Include="DTOs\ProfessorAreaDeFormacaoIdentity.cs" />
+    <Compile Include="DTOs\ProfessorTurmaIdentity.cs" />
+    <Compile Include="EncarregadoDeEducacao.cs" />
+    <Compile Include="EnderecoEletronico.cs" />
+    <Compile Include="Escola.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="LivroDePonto.cs" />
+    <Compile Include="LivroDePontoDoAluno.cs" />
+    <Compile Include="LivroDePontoDoProfessor.cs" />
+    <Compile Include="Localizacao.cs" />
+    <Compile Include="Morada.cs" />
+    <Compile Include="NivelAcademico.cs" />
+    <Compile Include="Observacao.cs" />
+    <Compile Include="Pais.cs" />
+    <Compile Include="Password.cs" />
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="Professor.cs" />
+    <Compile Include="ProfessorAreaDeFormacao.cs" />
+    <Compile Include="ProfessorTurma.cs" />
+    <Compile Include="Profissao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propina.cs" />
+    <Compile Include="Provincia.cs" />
+    <Compile Include="Telefone.cs" />
+    <Compile Include="TipoDeAvaliacao.cs" />
+    <Compile Include="TipoDeFormacao.cs" />
+    <Compile Include="TipoDeMorada.cs" />
+    <Compile Include="TipoDeNumeroDeTelefone.cs" />
+    <Compile Include="Turma.cs" />
+    <Compile Include="TurmaInfo.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="TurnoInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Common.Contracts\Core.Common.Contracts.csproj">
+      <Project>{AD68B43D-9220-4C0C-A1F8-AAFFF1D19C23}</Project>
+      <Name>Core.Common.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj">
+      <Project>{B61FD4CA-A61F-4F99-B278-6C44301E1D95}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

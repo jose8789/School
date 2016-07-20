@@ -1,0 +1,4 @@
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+C:\Users\Jose8789\Documents\Visual Studio 2015\Projects\Devs\Escolav3\School\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{880E3E32-2816-48F0-9E04-BB37F08D946D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>School.Data.Contracts</RootNamespace>
+    <AssemblyName>School.Data.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOs\AlunoDividaInfo.cs" />
+    <Compile Include="DTOs\AlunoHistorialInfo.cs" />
+    <Compile Include="DTOs\DateRange.cs" />
+    <Compile Include="DTOs\LivroDePontoTurmaInfo.cs" />
+    <Compile Include="DTOs\PropinaAlunoInfo.cs" />
+    <Compile Include="DTOs\PropinaTurmaInfo.cs" />
+    <Compile Include="DTOs\TipoDeFormacoes.cs" />
+    <Compile Include="Repositories.Interfaces\IAlunoDeficienciaRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IAlunoHistoriaRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IAlunoRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IAvaliacaoRepository.cs" />
+    <Compile Include="Repositories.Interfaces\ICursoRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IDisciplinaRepository.cs" />
+    <Compile Include="Repositories.Interfaces\ILivroDePontoDoAlunoRepository.cs" />
+    <Compile Include="Repositories.Interfaces\ILivroDePontoDoProfessorRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IProfessorRepository.cs" />
+    <Compile Include="Repositories.Interfaces\IPropinaRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Common.Contracts\Core.Common.Contracts.csproj">
+      <Project>{AD68B43D-9220-4C0C-A1F8-AAFFF1D19C23}</Project>
+      <Name>Core.Common.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj">
+      <Project>{B61FD4CA-A61F-4F99-B278-6C44301E1D95}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\School.Business.Entities\School.Business.Entities.csproj">
+      <Project>{3B25E470-F615-4964-BFBA-CE270A7ADAD6}</Project>
+      <Name>School.Business.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
